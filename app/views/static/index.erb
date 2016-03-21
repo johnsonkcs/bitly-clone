@@ -1,2 +1,19 @@
-<h1>Hello World</h1>
-<p>See Me in views/static/index.html.erb</p>
+<form action="/urls" method="post">
+Enter URL:
+<input type = "type" name="longurl">
+<input type = "submit" value="Submit">
+</form>
+
+
+
+<h1>Awesome Links</h1>
+
+<% @urls.each do |url| %>
+ <p><%= url.longurl %>, <%= "http://localhost:9393/" + url.shorturl %></p>
+ <% end %>
+
+
+
+
+<!-- <h1>Hello World</h1>
+<p>See Me in views/static/index.html.erb</p> -->
