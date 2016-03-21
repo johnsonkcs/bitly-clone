@@ -1,3 +1,7 @@
+
+<p style="text-align: center;"><a href="http://wowwwz.com/wp-content/uploads/2015/08/join1.png"><img class="size-full wp-image-336 aligncenter" alt="join1" src="http://wowwwz.com/wp-content/uploads/2015/08/join1.png" width="900" height="296" /></a></p>
+
+
 <form action="/urls" method="post">
 Enter URL:
 <input type = "type" name="longurl">
@@ -5,14 +9,15 @@ Enter URL:
 </form>
 
 
+<h1><span style="color: #ff0000;">Awesome Links</span></h1>
 
-<h1>Awesome Links</h1>
+<ul>
 
 <% @urls.each do |url| %>
- <p><%= url.longurl %>, <%= "http://localhost:9393/" + url.shorturl %></p>
+ <p><li><em><%= url.longurl %></em>, <a href=<%= "http://localhost:9393/" + url.shorturl %>><%= "  [Short Code ID]  " + url.shorturl %></a>, <%= "Visits:" + url.click_count.to_s %></li></p> 
  <% end %>
 
-
+</ul>
 
 
 <!-- <h1>Hello World</h1>

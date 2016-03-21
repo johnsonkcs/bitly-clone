@@ -8,6 +8,14 @@ class Url < ActiveRecord::Base
 
 	end
 
+	def increment_counter
+
+		self.click_count += 1
+		self.save
+
+
+	end
+
 	# This is Sinatra! Remember to create a migration!
 end
 

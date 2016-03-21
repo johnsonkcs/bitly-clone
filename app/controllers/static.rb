@@ -22,9 +22,14 @@ get '/:shorturl' do
 
 	@url = Url.where(shorturl: @shorturl).first
 
+	@url.increment_counter
+
 	redirect to @url.longurl
 end
 	#redirect to appropriate "long" url
+
+
+
 
 
 #========================================================================
