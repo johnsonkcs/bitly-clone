@@ -1,0 +1,98 @@
+
+
+p.center {
+  text-align: center;
+}
+
+
+
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+   background-color:#fff;
+}
+table#t01 th	{
+    background-color: black;
+    color: white;
+}
+
+/* Button Style */
+   button {
+	-moz-box-shadow:inset 0px 1px 3px -21px #000305;
+	-webkit-box-shadow:inset 0px 1px 3px -21px #000305;
+	box-shadow:inset 0px 1px 3px -21px #000305;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e7e9f0), color-stop(1, #15191c));
+	background:-moz-linear-gradient(top, #e7e9f0 5%, #15191c 100%);
+	background:-webkit-linear-gradient(top, #e7e9f0 5%, #15191c 100%);
+	background:-o-linear-gradient(top, #e7e9f0 5%, #15191c 100%);
+	background:-ms-linear-gradient(top, #e7e9f0 5%, #15191c 100%);
+	background:linear-gradient(to bottom, #e7e9f0 5%, #15191c 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e7e9f0', endColorstr='#15191c',GradientType=0);
+	background-color:#e7e9f0;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+	border:1px solid #051621;
+	display:inline-block;
+	cursor:pointer;
+	color:#fafafa;
+	font-family:Arial;
+	font-size:31px;
+	font-weight:bold;
+	padding:8px 39px;
+	text-decoration:none;
+	text-shadow:0px 0px 6px #091a29;
+}
+button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #15191c), color-stop(1, #e7e9f0));
+	background:-moz-linear-gradient(top, #15191c 5%, #e7e9f0 100%);
+	background:-webkit-linear-gradient(top, #15191c 5%, #e7e9f0 100%);
+	background:-o-linear-gradient(top, #15191c 5%, #e7e9f0 100%);
+	background:-ms-linear-gradient(top, #15191c 5%, #e7e9f0 100%);
+	background:linear-gradient(to bottom, #15191c 5%, #e7e9f0 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#15191c', endColorstr='#e7e9f0',GradientType=0);
+	background-color:#15191c;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:120%;
+    width:10%;
+    float:left;
+    padding:5px;	      
+}
+#section {
+    width:99%;
+    float:left;
+    padding:5px;	 	 
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
