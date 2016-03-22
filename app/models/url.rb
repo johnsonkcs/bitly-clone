@@ -1,5 +1,8 @@
 class Url < ActiveRecord::Base
 
+	validates_presence_of :longurl, message: " -- The url can't be blank lahh!"
+    validates :longurl, format: {with: /(http:\/\/|https:\/\/)([a-z].*)/, message: " -- Oh tidak Oh no! Sorry man, the input is invalid!"}
+
     before_create :shorten
 
 	def shorten

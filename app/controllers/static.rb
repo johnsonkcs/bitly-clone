@@ -10,10 +10,15 @@ end
 
 post '/urls' do
 
-	url = Url.create(longurl: params[:longurl])
-
+	url = Url.new(longurl: params[:longurl])
+	if url.save
+	@urls = Url.all
 	# erb :"static/index"
 	redirect to '/'
+    else
+    @error_messages = url.errors.full_messages
+    erb :"static/error"
+    end
 end
 
 # i.e /q6bda
