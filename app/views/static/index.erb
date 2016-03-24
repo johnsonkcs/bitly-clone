@@ -14,7 +14,7 @@
 
 
 
-<body>
+<!-- <body> -->
 
 <div id="header">
 <h1>The Avengers Deadly Shortener</h1>
@@ -30,17 +30,66 @@
 
 <div id="section">
 
-<p class="center"><a href="http://wowwwz.com/wp-content/uploads/2015/08/join1.png"><img class="size-full wp-image-336 aligncenter" alt="join1" src="http://wowwwz.com/wp-content/uploads/2015/08/join1.png" width=100% height=35% /></a></p>
 
-<form action="/urls" method="post" style="text-align: center;">
+<p class="center"><a href="http://wowwwz.com/wp-content/uploads/2015/08/join1.png"><img id ="headimg" class="size-full wp-image-336 aligncenter" alt="join1" src="http://wowwwz.com/wp-content/uploads/2015/08/join1.png" width=100% height=35% /></a></p>
+
+<!--  -->
+
+    <form action="/urls" method="post" name="sign up for beta form">
+      <div class="headerf">
+         <p class="center">||ARE YOU READY||</p>
+      </div>
+      <div class="description">
+        <p class="center">|| LOADING SUPERPOWERS ||</p>
+      </div>
+      <div class="inputf">
+        <input type="text" class="button" id="email" name="longurl" placeholder="ENTER URL TO AVENGE HERE!">
+        <input type="submit" class="button" id="submit" value="AVENGE!">
+      </div>
+    </form>
+
+ <!--  -->
+
+<!-- <form action="/urls" method="post" style="text-align: center;">
 <input type = "type" name="longurl" placeholder="Enter Url To Avenge Here" style="height:50px; width:400px;">
 <button type="submit" value="Submit">Boom!</button>
-<!-- <input type = "submit" value="Submit"> -->
-</form>
+<input type = "submit" value="Submit">
+</form> -->
 
 
 
 <br>
+
+
+<div class="panel">
+        <br />
+
+<h1><p class="center"><span style="color: #236B30;"><u>The Avenged Links</u></span></p></h1>
+        <br />
+
+<table id="t01">
+
+  <tr>
+    <th>Original Url</th>
+    <th><p class="center">Short Url</p></th>    
+    <th><p class="center">Click Count</p></th>
+  </tr>
+  <% @urls.each do |url| %>
+  <tr>
+ <td><li><em><%= url.longurl %></em></li></td>
+ <td><p class="center"><a href=<%= "http://localhost:9393/" + url.shorturl %>><%=  url.shorturl %></a></p></td>
+ <td><p class="center"><%= " Visits: " + url.click_count.to_s + " " %></p></td> 
+ <% end %>
+  </tr>
+
+</table>
+
+        </div>
+        <p class="slide"><div class="pull-me">Click To See/Hide Avenged Links</div></p>
+
+
+
+<!-- 
 
 <h1><p class="center"><span style="color: #ff0000;">The Avenged Links</span></p></h1>
 
@@ -63,7 +112,7 @@
  <% end %>
   </tr>
 
-</table>
+</table> -->
 
 </div>
 
@@ -72,7 +121,7 @@
 Copyright © Johnson Khoo Productions Co Ltd
 </div>
 
-</body>
+<!-- </body> -->
 </html>
 
 <!--  -->

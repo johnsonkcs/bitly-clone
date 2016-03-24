@@ -29,7 +29,7 @@ table#t01 th	{
 }
 
 /* Button Style */
-   button {
+/*   button {
 	-moz-box-shadow:inset 0px 1px 3px -21px #000305;
 	-webkit-box-shadow:inset 0px 1px 3px -21px #000305;
 	box-shadow:inset 0px 1px 3px -21px #000305;
@@ -68,7 +68,7 @@ button:hover {
 button:active {
 	position:relative;
 	top:1px;
-}
+}*/
 
 #header {
     background-color:black;
@@ -95,4 +95,138 @@ button:active {
     clear:both;
     text-align:center;
    padding:5px;	 	 
+}
+
+.pull-me{
+    -webkit-box-shadow: 0 0 8px #FFD700;
+    -moz-box-shadow: 0 0 8px #FFD700;
+    box-shadow: 0 0 8px #DADEDB;
+    cursor:pointer;
+}
+.panel {
+background: rgba(250, 250, 250, 0.17);
+	background-size:90% 90%;
+	height: 70%;
+	display:none;
+	font-family:garamond,times-new-roman,serif;
+}
+.panel p{
+    text-align:center;
+}
+.slide {
+	margin:0;
+	padding:0;
+	border-top:solid 2px #FDFBFB;
+}
+.pull-me {
+	display:block;
+    position:relative;
+    bottom:inherit;
+    width:initial;
+    height:30px;
+	font-family:arial,sans-serif;
+    font-size:23px;
+	color:#ffffff;
+    background:#54D0A4;
+	text-decoration:none;
+    -moz-border-bottom-left-radius:5px;
+    -moz-border-bottom-right-radius:5px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    text-align: center
+}
+.pull-me p {
+    text-align:center;
+}
+
+
+/*dhasjdasdklasdlkaskldaskldklasdkjaslkjdlkasjdjaskldjklasjdklasjkldjaklsjdklasjdklajskldjaskljdkasjkldjaslkdjaslkdsa*/
+
+
+/*body {
+  background: #F8A434;
+  font-family: 'Lato', sans-serif;
+  color: #FDFCFB;
+  text-align: center;
+}*/
+
+body {
+	background: #FFFFFF;
+/*width: 1280px;
+background-image: url("http://www.awwwards.com/awards/images/2015/05/white-space-uxpin-0b.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;*/
+}
+
+
+form {
+  width: 450px;
+  margin: 1% auto;
+}
+
+
+.headerf {
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+
+.description {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.3em;
+  margin: -2px 0 45px;
+}
+
+
+.inputf {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 30px #282828;
+}
+
+
+.button {
+  height: 44px;
+  border: none;
+}
+
+  
+#email {
+  width: 75%;
+  border: 5px;
+  background: #FDFCFB;
+  font-family: inherit;
+  color: #737373;
+  letter-spacing: 1px;
+  text-indent: 5%;
+  border-radius: 5px 0 0 5px;
+}
+
+
+#submit {
+  width: 25%;
+  height: 46px;
+  background: 	#282828;
+  font-family: inherit;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background .3s ease-in-out;
+}
+  
+
+#submit:hover {
+  background: #585858;
+}
+  
+
+input:focus {
+  outline: none;
+  outline: 2px solid #101010 ;
+  box-shadow: 0 0 2px #101010 ;
 }
