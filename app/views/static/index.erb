@@ -79,7 +79,7 @@
   <% @urls.each do |url| %>
   <tr>
  <td><li><em><%= url.longurl %></em></li></td>
- <td><p class="center"><a href=<%= "http://localhost:9393/" + url.shorturl %>><%=  url.shorturl %></a></p></td>
+ <td><p class="center"><a href=<%= "https://avengers-deadly-shortener.herokuapp.com/" + url.shorturl %>><%=  url.shorturl %></a></p></td>
  <td><p class="center"><%= " Visits: " + url.click_count.to_s + " " %></p></td> 
  <% end %>
   </tr>
