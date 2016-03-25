@@ -75,6 +75,7 @@ button:active {
     color:white;
     text-align:center;
     padding:5px;
+    float:top;
 }
 #nav {
     line-height:30px;
@@ -94,7 +95,8 @@ button:active {
     color:white;
     clear:both;
     text-align:center;
-   padding:5px;	 	 
+   padding:5px;	
+   float:bottom; 	 
 }
 
 .pull-me{
@@ -106,7 +108,7 @@ button:active {
 .panel {
 background: rgba(250, 250, 250, 0.17);
 	background-size:90% 90%;
-	height: 70%;
+	height: inherit;
 	display:none;
 	font-family:garamond,times-new-roman,serif;
 }

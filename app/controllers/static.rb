@@ -4,21 +4,29 @@
 get '/' do
 	puts "[LOG] Getting /"
 	puts "[LOG] Params: #{params.inspect}"
-	@urls = Url.all
+	@urls = Url.last(4)
+	# @urls = Url.all
   erb :"static/index"
 end
 
 post '/urls' do
+	# byebug
+	@url = Url.new(longurl: params[:longurl])
+	# byebug
+	if @url.save
+	@urls = Url.last(4)
+	# @urls = Url.all
 
-	url = Url.new(longurl: params[:longurl])
-	if url.save
-	@urls = Url.all
+	@url.to_json
 	# erb :"static/index"
-	redirect to '/'
+	# {url: url}.to_json
+	# redirect to '/'
     else
-    @error_messages = url.errors.full_messages
+    @error_messages = @url.errors.full_messages
     erb :"static/error"
     end
+
+    # {url: url}.to_json
 end
 
 # i.e /q6bda
